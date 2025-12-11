@@ -5,31 +5,31 @@ describe('add', () => {
     expect(calculator.add(0, 0)).toBe(0);
   });
 
-  test.skip('adds 2 and 2', () => {
+  test('adds 2 and 2', () => {
     expect(calculator.add(2, 2)).toBe(4);
   });
 
-  test.skip('adds positive numbers', () => {
+  test('adds positive numbers', () => {
     expect(calculator.add(2, 6)).toBe(8);
   });
 });
 
 describe('subtract', () => {
-  test.skip('subtracts numbers', () => {
+  test('subtracts numbers', () => {
     expect(calculator.subtract(10, 4)).toBe(6);
   });
 
-  test.skip('subtracts negative numbers', () => {
+  test('subtracts negative numbers', () => {
     expect(calculator.subtract(-10, -4)).toBe(-6);
   });
 
-  test.skip('subtracts numbers of mixed parity', () => {
+  test('subtracts numbers of mixed parity', () => {
     expect(calculator.subtract(-8, 7)).toBe(-15);
   });
 });
 
 describe('sum', () => {
-  test.skip('computes the sum of an empty array', () => {
+  test('computes the sum of an empty array', () => {
     expect(calculator.sum([])).toBe(0);
   });
 
@@ -47,7 +47,7 @@ describe('sum', () => {
 });
 
 describe('multiply', () => {
-  test.skip('multiplies two numbers', () => {
+  test('multiplies two numbers', () => {
     expect(calculator.multiply([2, 4])).toBe(8);
   });
 
@@ -57,11 +57,11 @@ describe('multiply', () => {
 });
 
 describe('power', () => {
-  test.skip('raises one number to the power of another number', () => {
+  test('raises one number to the power of another number', () => {
     expect(calculator.power(4, 3)).toBe(64); // 4 to third power is 64
   });
 
-  test.skip('raises one number to the power of a large number', () => {
+  test('raises one number to the power of a large number', () => {
     expect(calculator.power(3, 10)).toBe(59049); // 3 to tenth power is 59049
   });
 });
