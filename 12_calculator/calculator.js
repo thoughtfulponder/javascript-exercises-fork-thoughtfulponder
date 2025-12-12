@@ -19,15 +19,14 @@ const power = function (num1, num2) {
 };
 
 const factorial = function (num) {
-  if (num === 0) {
-    return 1;
-  } else if (num === 1) {
+  let result = 1;
+  if (num === 0 || num === 1) {
     return 1;
   } else {
     for (let i = 2; i <= num; i++) {
-      num = num * i;
+      result = result * i;
     }
-    return num;
+    return result;
   }
 };
 
